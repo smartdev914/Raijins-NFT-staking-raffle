@@ -1,0 +1,52 @@
+.tot-prizes-won-container {
+  padding: 1rem;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border: dashed 2px white;
+  width: fit-content;
+  text-transform: uppercase;
+
+  h6 {
+    font-size: 1.6rem;
+
+    @media screen and (max-width: 640px) {
+      font-size: 1.4rem;
+    }
+  }
+
+  img {
+    width: 80px;
+    margin-right: 2rem;
+  }
+
+  .won-tot-prizes-num {
+    font-size: 1.4rem;
+
+    @media screen and (max-width: 640px) {
+      font-size: 1rem;
+    }
+
+    span {
+      font-size: 3rem;
+      
+      @media screen and (max-width: 640px) {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &.dark {
+    .won-tot-prizes-num {
+      span {
+        color: #5e9ab1;
+      }
+    }
+  }
+  
+  &.light {
+    .won-tot-prizes-num {
+      span {
+        color: #000;
+      }
+    }
+  }
+}

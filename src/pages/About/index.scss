@@ -1,0 +1,26 @@
+.about-container {
+  padding-top: 9rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-bottom: 8rem;
+
+  @media screen and (min-width: 411px) and (max-width: 640px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  @media screen and (max-width: 410px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .about-title {
+    margin: auto;
+    margin-bottom: 4rem;
+    width: 70%;
+
+    @media screen and (max-width: 640px) {
+      width: 100%;
+    }
+  }
+}

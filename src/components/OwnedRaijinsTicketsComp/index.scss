@@ -1,0 +1,70 @@
+.owned-raijins-tickets-container {
+  // padding: 1rem;
+  // border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  // border: dashed 2px white;
+  width: fit-content;
+  text-transform: uppercase;
+  font-family: 'Poppins';
+  // font-style: italic;
+
+  h6 {
+    font-size: 1.6rem;
+
+    @media screen and (max-width: 640px) {
+      font-size: 1.4rem;
+    }
+  }
+
+  img {
+    width: 130px;
+    margin-right: 2rem;
+
+    @media screen and (max-width: 640px) {
+      width: 80px;
+      height: auto;
+    }
+  }
+
+  .owned-raijins-tickets-num {
+    font-size: 1.4rem;
+
+    @media screen and (max-width: 640px) {
+      font-size: 1rem;
+    }
+
+    span {
+      font-size: 3rem;
+      font-style: normal;
+      font-family: 'Poppins';
+      color: var(--primary);
+
+      @media screen and (max-width: 640px) {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &.dark {
+    .owned-raijins-tickets-num {
+      span {
+        color: var(--primary);
+      }
+    }
+  }
+  
+  &.light {
+    .owned-raijins-tickets-num {
+      span {
+        color: #000;
+      }
+    }
+  }
+
+  &.primary {
+    .owned-raijins-tickets-num {
+      span {
+        color: var(--primary);
+      }
+    }
+  }
+}

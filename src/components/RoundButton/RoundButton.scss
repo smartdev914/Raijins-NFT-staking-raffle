@@ -1,0 +1,41 @@
+.round-btn {
+  padding: 0.5rem 2rem;
+  // border: 1px solid white;
+  border: none;
+  border-radius: 99px;
+  font-family: 'Poppins';
+  font-size: 1rem;
+  text-transform: uppercase;
+  &.danger {
+    background-color: #9f2c3c;
+    &:hover {
+      background-color:rgb(114, 26, 38);
+    }
+  }
+  &.primary {
+    // background-color: #5e9ab1;
+    background-image: linear-gradient(135deg, #0047FF 10%, #57048A);
+    &:hover {
+      background-image: linear-gradient(135deg, #57048A 10%, #0047FF);
+    }
+  }
+  &.transparent {
+    border: 1px solid white;
+    background-color: transparent;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  // &:hover {
+  //   // border: 1px solid transparent;
+  //   background-image: linear-gradient(135deg, #0047FF 10%, #57048A);
+  // }
+  &:disabled {
+    background-color: #767676;
+    opacity: 1;
+    &:hover {
+      background-color: #767676;
+      transform: scale(1);
+    }
+  }
+}

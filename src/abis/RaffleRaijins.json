@@ -1,0 +1,268 @@
+[
+  {
+    "inputs": [
+      { "internalType": "address", "name": "initialOwner", "type": "address" }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "owner", "type": "address" }
+    ],
+    "name": "OwnableInvalidOwner",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "account", "type": "address" }
+    ],
+    "name": "OwnableUnauthorizedAccount",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_address",
+        "type": "address"
+      }
+    ],
+    "name": "WithdrawAll",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      { "internalType": "uint256", "name": "_indexRaffle", "type": "uint256" },
+      { "internalType": "uint256", "name": "_ticketCnt", "type": "uint256" }
+    ],
+    "name": "addTicket",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "cntRaffles",
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "decideWinners",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "_userAccount", "type": "address" }
+    ],
+    "name": "getRaffleInfo",
+    "outputs": [
+      {
+        "components": [
+          { "internalType": "string", "name": "value", "type": "string" },
+          { "internalType": "int256", "name": "winnerIndex", "type": "int256" },
+          { "internalType": "address", "name": "winner", "type": "address" },
+          {
+            "internalType": "uint256",
+            "name": "totalTicketCnt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "ticketCntForUser",
+            "type": "uint256"
+          },
+          { "internalType": "bool", "name": "isDecided", "type": "bool" },
+          { "internalType": "bool", "name": "isDisabled", "type": "bool" },
+          {
+            "internalType": "uint256",
+            "name": "timeStarted",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "timeDecided",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct RaffleRaijins.RaffleStatus[]",
+        "name": "_rafflesForUser",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "uint256", "name": "_indexRaffle", "type": "uint256" },
+      { "internalType": "uint256", "name": "_totalTickets", "type": "uint256" }
+    ],
+    "name": "getRandomNumber",
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "period",
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "name": "raffleInfo",
+    "outputs": [
+      { "internalType": "string", "name": "value", "type": "string" },
+      { "internalType": "int256", "name": "winnerIndex", "type": "int256" },
+      { "internalType": "address", "name": "winner", "type": "address" },
+      {
+        "internalType": "uint256",
+        "name": "totalTicketCnt",
+        "type": "uint256"
+      },
+      { "internalType": "bool", "name": "isDecided", "type": "bool" },
+      { "internalType": "bool", "name": "isDisabled", "type": "bool" },
+      { "internalType": "uint256", "name": "timeStarted", "type": "uint256" },
+      { "internalType": "uint256", "name": "timeDecided", "type": "uint256" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "raijinsTicketAddress",
+    "outputs": [
+      { "internalType": "contract IERC20", "name": "", "type": "address" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "uint256", "name": "_period", "type": "uint256" }
+    ],
+    "name": "setPeriodToDeposit",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "uint256", "name": "_cntRaffles", "type": "uint256" }
+    ],
+    "name": "setRaffleCount",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "uint256", "name": "_raffleIndex", "type": "uint256" },
+      { "internalType": "bool", "name": "_isDisabled", "type": "bool" }
+    ],
+    "name": "setRaffleDisable",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "uint256", "name": "_raffleIndex", "type": "uint256" },
+      { "internalType": "string", "name": "_raffleValue", "type": "string" }
+    ],
+    "name": "setRaffleValue",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "_address", "type": "address" }
+    ],
+    "name": "setRaijinsTicketAddress",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "uint256", "name": "_waitingPeriod", "type": "uint256" }
+    ],
+    "name": "setWaitingPeriodForNextRaffle",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "startRaffles",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "newOwner", "type": "address" }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "waitingPeriod",
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "withdrawRaijinsTicket",
+    "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  { "stateMutability": "payable", "type": "receive" }
+]

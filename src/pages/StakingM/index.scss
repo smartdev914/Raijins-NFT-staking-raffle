@@ -1,0 +1,467 @@
+.staking-container {
+  padding: 50px;
+
+  @media screen and (min-width: 411px) and (max-width: 640px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  @media screen and (max-width: 410px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .staking-hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 3rem;
+    padding-top: 9rem;
+
+    .scrollbtn-wrapper {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -6rem;
+
+      @media screen and (max-width: 640px) {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 640px) {
+      // background-image: url(../../assets/images/staking/Vita.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding-top: 5rem;
+    }
+
+    .page-intro {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2.2rem;
+
+      @media screen and (max-width: 640px) {
+        // background-color: rgb(93 154 174 / 80%);
+        padding: 1rem;
+        border-radius: 1rem;
+        // border: 1px solid var(--success);
+      }
+    }
+
+    .hero-img-container {
+      width: 50%;
+
+      img {
+        margin: auto;
+      }
+
+      @media screen and (max-width: 640px) {
+        display: none;
+      }
+    }
+  }
+
+  .staking-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-family: 'font-yokomoji';
+
+    @media screen and (max-width: 640px) {
+      display: block;
+      background-image: url(../../assets/images/staking/NiQuiz.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .staking-desc-img-container {
+      width: 100%;
+
+      @media screen and (max-width: 640px) {
+        display: none;
+      }
+    }
+
+    .staking-description-container {
+      padding-left: 4rem;
+      padding-right: 4rem;
+
+      @media screen and (max-width: 640px) {
+        background-color: rgb(93 154 174 / 80%);
+        padding: 1rem;
+        border-radius: 1rem;
+        border: 1px solid var(--success);
+      }
+
+      h5 {
+        font-size: 2rem;
+        // text-transform: uppercase;
+
+        @media screen and (max-width: 640px) {
+          font-size: 1.4rem;
+        }
+
+        span: {
+          color: var(--danger);
+        }
+      }
+
+      h6.reward {
+        color: var(--danger);
+        font-size: 1.4rem;
+        text-align: center;
+        text-decoration: underline;
+        font-style: italic;
+        text-transform: uppercase;
+      }
+
+      .reward-boost-desc {
+        font-size: 1.4rem;
+        text-align: center;
+        font-style: italic;
+        font-family: "Poppins";
+
+        @media screen and (max-width: 640px) {
+          color: white;
+          font-size: 1.1rem;
+        }
+
+        span {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .earned-tickets {
+    padding-top: 4rem;
+    margin-bottom: 4rem;
+    .section-title {
+      img {
+        transform: rotate(-30deg)
+      }
+
+      span {
+        font-size: 2.5rem;
+      }
+    }
+
+    .earned-tickets-table {
+      border-collapse: collapse;
+      border: 1px solid var(--secondary);
+      width: 100%;
+      text-align: center;
+      font-size: 1.4rem;
+      // font-style: italic;
+      font-family: 'Poppins';
+      
+      tbody {
+        tr {
+          td {
+            padding: 1rem 2rem;
+            border: 1px solid var(--secondary);
+            font-family: 'Poppins';
+            &.image-cell {
+              border: none;
+            }
+          }
+          &:last-child {
+            td.image-cell {
+              img {
+                width: 25%;
+              }
+            }
+          }
+
+          td.image-cell {
+            img {
+              width: 14%;
+            }
+          }
+        }
+      }
+
+      th {
+        color: var(--primary);
+        border: 1px solid var(--secondary);
+        text-transform: uppercase;
+        padding: 0.5rem;
+      }
+    }
+
+    .nft-image {
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .earned-ticket-card {
+      text-transform: uppercase;
+      // border: 1px solid var(--secondary);
+      background-color: #16182d;
+      padding: 0.6rem;
+      border-radius: 0.6rem;
+      font-family: 'Poppins';
+      .nft-type {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .reward-calculator {
+    
+    .result-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 300px;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+
+      @media screen and (max-width: 640px) {
+        width: 80%;
+      }
+      
+      img {
+        width: 5rem;
+        &:last-child {
+          transform: rotate(180deg);
+        }
+      }
+      .result {
+        font-size: 6rem;
+        font-family: 'yokomoji';
+      }
+    }
+
+    .raijins-tickets-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      justify-content: center;
+      align-items: center;
+      .title {
+        text-decoration: underline;
+        color: var(--primary);
+        text-transform: uppercase;
+        font-style: italic;
+        font-family: 'yokomoji';
+        font-size: 2rem;
+
+        @media screen and (max-width: 640px) {
+          font-size: 1.4rem;
+        }
+      }
+      img {
+        max-width: 300px;
+
+      }
+    }
+  }
+
+  .raijins-staking {
+    padding-top: 9rem;
+    text-align: center;
+    font-size: 1.4rem;
+
+    .table-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+    // .raijins-staking-info {
+    //   display: flex;
+    //   justify-content: right;
+    //   padding: 0.1rem;
+
+    //   .raijins-staking-info-left {
+    //   }
+  
+    //   .raijins-staking-info-right {
+    //     padding-left: 0.5rem;
+    //   }
+
+    //   .raijins-staking-info-claim {
+    //     padding: 0.3rem;
+    //   }
+    // }
+
+    .raijins-staking-tabs-m {
+      .react-tabs__tab-list {
+        display: flex;
+        justify-content: center;
+
+        .react-tabs__tab {
+          border: none;
+          background-color: transparent;
+          font-family: 'Poppins';
+          padding: 0;
+
+          h6 {
+            font-size: 1.8rem;
+            font-style: italic;
+            margin-bottom: 0.8rem;
+          }
+          p {
+            font-size: 1.4rem;
+            padding: 0.8rem;
+            text-transform: uppercase;
+            font-weight: 700;
+
+            span {
+              color: var(--danger);
+            }
+          }
+          &.react-tabs__tab--selected {
+            border: none;
+            h6 {
+              color: var(--primary);
+            }
+            p {
+              background-color: #aaa;
+              color: var(--secondary);
+            }
+            &::after {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .table-wrapper {
+        max-height: 100vh;
+        overflow: auto;
+        border-bottom: 1px solid  var(--secondary);
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+
+      .cards-wrapper {
+        max-height: 100vh;
+        overflow: auto;
+      }
+      
+      .raijins-staking-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        border: 1px solid var(--secondary);
+        border-radius: 1rem;
+        padding: 1rem;
+        text-align: left;
+        margin-bottom: 1rem;
+        font-family: 'Poppins';
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .img-container {
+          width: 100%;
+          max-width: 300px;
+          border-radius: 8px;
+          overflow: hidden;
+        }
+        
+        .raijins-checkbox {
+          input + label {
+            width: 21px;
+            height: 20px;
+          }
+          position: absolute;
+          top: 0.5rem;
+          right: 1rem;
+        }
+      }
+
+      .raijins-staked-card {
+        position: relative;
+        display: flex;
+        gap: 0.5rem;
+        padding: 0.5rem;
+        align-items: center;
+        margin-bottom: 1rem;
+        border: 1px solid var(--secondary);
+        border-radius: 1rem;
+        text-align: left;
+
+        .img-container {
+          width: 100%;
+        }
+
+        .raijins-checkbox {
+          input + label {
+            width: 21px;
+            height: 20px;
+          }
+          position: absolute;
+          bottom: 0.5rem;
+          right: 1rem;
+        }
+
+        .auto-restake-btn {
+          background-color: transparent;
+          border: none;
+          outline: none;
+          width: 20px;
+          padding: 0;
+        }
+      }
+      
+      .btn-group {
+        display: flex;
+        gap: 1rem;
+        margin-left: 70px;
+        justify-content: flex-end;
+
+        @media screen  and (max-width: 640px) {
+          margin-left: 0;
+          flex-direction: column;
+        }
+
+        .select-all-btn {
+          background-color: transparent;
+          text-decoration: underline;
+          outline: none;
+          border: none;
+          color: var(--primary);
+          text-transform: uppercase;
+          font-size: 1.4rem;
+          // font-style: italic;
+          font-family: 'Poppins';
+        }
+      }
+
+      .raijins-checkbox {
+        input[type='checkbox'] {
+          display: none;
+        }
+        input + label {
+          display: inline-block;
+          width: 52px;
+          height: 50px;
+          cursor: pointer;
+          background-image: url(../../assets/images/common/checkbox-unchecked.png);
+          background-size: cover;
+        }
+        input[type='checkbox']:checked + label {
+          background-image: url(../../assets/images/common/checkbox-checked.png);
+        }
+      }
+    }
+    @media screen and (max-width: 640px) {
+      padding-top: 5rem;
+    }
+  }
+}

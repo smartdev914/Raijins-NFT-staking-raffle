@@ -1,0 +1,33 @@
+.Raijins-scrollbars {
+  .content {
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .scrollbar {
+    .track-and-thumb {
+      display: block;
+      height: 100%;
+      position: relative;
+      width: 16px;
+
+      .track {
+        bottom: 0;
+        cursor: pointer;
+        position:absolute;
+        top: 0;
+        width: 16px;
+      }
+
+      .thumb {
+        position: absolute;
+        width: 16px;
+      }
+    }
+  }
+}

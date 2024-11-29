@@ -1,0 +1,480 @@
+.earn-raijins-tickets-container {
+  padding-top: 9rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-bottom: 8rem;
+  // background: linear-gradient(170deg, rgba(0,0,0,1) 50%, rgba(94,154,177,1) 50%);
+
+  @media screen and (min-width: 411px) and (max-width: 640px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background: black;
+  }
+
+  @media screen and (max-width: 410px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background: black;
+  }
+  
+  .how-to-earn {
+    position: relative;
+    margin-bottom: 100px;
+
+    // .scrollbtn-wrapper {
+    //   // position: absolute;
+    //   // left: 50%;
+    //   width: fit-content;
+    //   margin: auto;
+    //   // transform: translateX(-50%);
+    //   bottom: -16rem;
+
+    //   @media screen and (max-width: 640px) {
+    //     bottom: -9px;
+    //   }
+    // }
+
+    .timeline {
+      width: 100%;
+    }
+    
+    .timeline.timeline-four {
+      margin: 1.25rem 0;
+      position: relative;
+    }
+    
+    .timeline.timeline-four .timeline-item {
+      margin-bottom: 4rem;
+      position: relative;
+    }
+    
+    .timeline.timeline-four .icon {
+      width: 16px;
+      height: 16px;
+      margin: auto;
+      position: absolute;
+      background-color: #fff;
+      border-radius: 50%;
+      border: 2px solid #e9ecef;
+      margin-top: 1rem;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+    
+    .timeline.timeline-four .date-content {
+      width: 50%;
+      float: left;
+      position: relative;
+    }
+    
+    .timeline.timeline-four .date-outer {
+      width: 150px;
+      height: 150px;
+      text-align: center;
+      margin: auto;
+      z-index: 1;
+    }
+    
+    .timeline.timeline-four .date {
+      width: 100%;
+      margin: auto;
+      position: absolute;
+      top: 33%;
+      left: 0;
+    }
+    
+    .timeline.timeline-four i {
+      font-size: 1.5rem;
+    }
+    
+    .timeline.timeline-four .year {
+      display: block;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+    
+    .timeline.timeline-four .timeline-item:nth-child(2n) .date-content {
+      float: right;
+    }
+    
+    .timeline.timeline-four .timeline-content {
+      width: 50%;
+      padding: 0.625rem 0 0.625rem 3.125rem;
+      float: right;
+      font-size: 1.2rem;
+    }
+    
+    .timeline.timeline-four .timeline-item:nth-child(2n) .timeline-content {
+      padding: 0.625rem 3.125rem 0.625rem 0;
+      text-align: right;
+      font-size: 1.2rem;
+    }
+    
+    .timeline.timeline-four .timeline-item::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    
+    .timeline.timeline-four .timeline-item:hover .date-outer::before {
+      left: 6px;
+    }
+    
+    .timeline.timeline-four .timeline-item:hover .date-outer::after {
+      left: -6px;
+    }
+    
+    .timeline.timeline-four .timeline-item:nth-child(2n) .date-content {
+      float: right;
+    }
+    
+    .timeline.timeline-four .timeline-item:nth-child(2n) .timeline-content {
+      padding: .625rem 3.125rem .625rem 0;
+      text-align: right;
+      font-size: 1.2rem;
+    }
+    
+    .timeline.timeline-four .timeline-item:hover .date-outer::before {
+      left: 6px
+    }
+    
+    .timeline.timeline-four .timeline-item:hover .date-outer::after {
+      left: -6px
+    }
+    
+    .timeline.timeline-four .date-outer::before {
+      content: "";
+      width: 150px;
+      height: 150px;
+      margin: 0 auto;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: 2px solid #473bf5 !important;
+      left: -6px;
+      transition: all .9s cubic-bezier(.34, 1.45, .7, 1)
+    }
+    
+    .timeline.timeline-four .date-outer::after {
+      content: "";
+      width: 150px;
+      height: 150px;
+      margin: 0 auto;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: 2px solid #473bf5 !important;
+      left: 6px;
+      transition: all .9s cubic-bezier(.34, 1.45, .7, 1)
+    }
+    
+    .timeline.timeline-one .timeline-item:nth-child(2n+1) {
+      margin-left: 0;
+      padding-right: 2.75rem;
+      padding-left: 0;
+      text-align: right;
+    }
+    
+    .timeline.timeline-one .timeline-item:nth-child(2n+1):after,
+    .timeline.timeline-one .timeline-item:nth-child(2n+1):before {
+      right: 0;
+      left: auto;
+    }
+    
+    .timeline.timeline-one .timeline-item:nth-child(2n+1):before {
+      margin-right: -.5rem;
+    }
+    
+    .timeline.timeline-one .timeline-item:nth-child(2n+1):after {
+      margin-right: -.0625rem;
+    }
+    
+    .timeline.timeline-four .timeline-item:nth-child(2n) .date-content {
+      float: right;
+    }
+    
+    .timeline.timeline-four .timeline-item:nth-child(2n) .timeline-content {
+      padding: .625rem 3.125rem .625rem 0;
+      text-align: right;
+      font-size: 1.2rem;
+    }
+
+    .timeline.timeline-four::before {
+      content: "";
+      display: block;
+      width: 2px;
+      height: 100%;
+      background: #e9ecef;
+      margin: 0 auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+
+    @media screen and (max-width: 640px) {
+      margin-bottom: 100px;
+
+      .timeline.timeline-four .date-content {
+        width: 100%;
+        float: none;
+        margin-bottom: 16px;
+      }
+    
+      .timeline.timeline-four .timeline-content {
+        width: 100%;
+        float: none;
+        padding-left: 0;
+        text-align: center;
+      }
+    
+      .timeline.timeline-four .timeline-item:nth-child(2n) .timeline-content {
+        padding-right: 0;
+        text-align: center;
+      }
+    
+      .timeline.timeline-four::before {
+        display: none;
+      }
+
+      .timeline.timeline-four .icon {
+        display: none;
+      }
+    }
+
+    .earn-raijins-tickets-title {
+      margin: auto;
+      margin-bottom: 4rem;
+      width: 50%;
+
+      @media screen and (max-width: 640px) {
+        width: 100%;
+      }
+    }
+  
+    // .cards-row {
+    //   display: grid;
+    //   grid-template-columns: repeat(2, 1fr);
+    //   justify-content: space-between;
+    //   gap: 32px;
+    //   margin-bottom: 100px;
+    //   width: 60%;
+    //   margin-left: auto;
+    //   margin-right: auto;
+  
+    //   @media screen and (max-width: 640px) {
+    //     grid-template-columns: 1fr;
+    //     margin-bottom: 40px;
+    //   }
+
+    //   .earn-raijins-tickets-card {
+    //     font-family: 'Poppins';
+    //     position: relative;
+    //     text-align: center;
+  
+    //     @media screen and (max-width: 640px) {
+    //       border: 1px solid var(--secondary);
+    //       padding-top: 1rem;
+    //       padding-bottom: 1rem;
+    //       border-radius: 1rem;
+    //     }
+        
+    //     .card-content {
+    //       .title {
+    //         text-transform: capitalize;
+    //         font-size: 2rem;
+    //         color: #5e9ab1;
+    //       }
+  
+    //       .content {
+    //         font-style: italic;
+    //         font-size: 1.2rem;
+
+    //         @media screen and (max-width: 640px) {
+    //           margin-bottom: 1rem;
+    //         }
+    //       }
+    //     }
+  
+    //     .card-action {
+    //       position: absolute;
+    //       bottom: -60px;
+    //       left: 0;
+    //       right: 0;
+
+    //       @media screen and (max-width: 640px) {
+    //         position: static;
+    //       }
+    //     }
+    //   }
+    // }
+    
+  }
+
+  .buy-raijins {
+    position: relative;
+    padding-top: 100px;
+    // min-height: 700px;
+
+    @media screen and (max-width: 640px) {
+      padding-top: 0;
+      min-height: 300px;
+    }
+
+    .buy-raijins-title {
+      width: 80%;
+      margin: auto;
+      margin-bottom: 4rem;
+
+      @media screen and (max-width: 640px) {
+        width: 100%;
+      }
+    }
+
+    .raijins-ticket-container {
+      position: absolute;
+      right: 0rem;
+      top: 100px;
+      padding: 2rem;
+      width: 15%;
+      .raijins-ticket-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 40px;
+        img#RaijinsTicketImgY {
+          width: 70%;
+        }
+
+        img#RaijinsTicketContainerTopBorderImg {
+          position: absolute;
+          width: 100%;
+          top: 0;
+        }
+        img#RaijinsTicketContainerBottomBorderImg {
+          position: absolute;
+          width: 100%;
+          bottom: 0;
+        }
+      }
+      
+      @media screen and (max-width: 640px) {
+        display: none;
+      }
+    }
+
+    .raijins-ticket-container-sm {
+      display: none;
+      @media screen and (max-width: 640px) {
+        display: block;
+        padding: 2rem;
+        .raijins-ticket-wrapper {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 1rem;
+
+          img#RaijinsTicketImg {
+            width: 40%;
+          }
+        }        
+      }
+    }
+
+    .raijins-ticket-img-container-price {
+      font-family: 'yokomoji';
+      font-size: 3.5rem;
+      justify-self: center;
+
+      @media screen and (max-width: 640px) {
+        font-size: 1.4rem;
+      }
+    }
+
+    .matics-for-purchase {
+      font-family: 'Poppins';
+      margin-top: 1.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      font-size: 2.2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+
+  .add-btn {
+    background: var(--primary);
+    color: #FFFFFF;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 3px solid #ff7a09;
+    margin-top: 1.5rem;
+    display: inline-flex;
+    padding: 0.4rem;
+  
+    &:hover {
+      background: #ff7a09;
+    }
+    // &:active {
+    //   background: #6a1db4;
+    // }
+  }
+
+  .add-image {
+    height: 1.8rem;
+    margin: auto;
+  }
+
+  .add-text {
+    text-align: center;
+    margin: auto;
+    color: black;
+    font-weight: 600;
+  }
+}
+
+.buy-raijins-tickets-modal,
+.bought-raijins-tickets-modal {
+  background-color: rgb(159, 44, 60, 0.9);
+  
+  .title {
+    font-size: 2.2rem;
+
+    @media screen and (max-width: 640px) {
+      font-size: 1.6rem;
+    }
+  }
+
+  .desc {
+    font-size: 1.4rem;
+
+    @media screen and (max-width: 640px) {
+      font-size: 1.1rem;
+    }
+  }
+  
+  .status {
+    color: #5e9ab1;
+  }
+}
+
+.buy-raijins-tickets-modal {
+  padding: 4rem;
+
+  @media screen and (max-width: 640px) {
+    padding: 2rem 1rem;
+  }
+}
+
+.bought-raijins-tickets-modal {
+  padding: 2rem 4rem;
+
+  @media screen and (max-width: 640px) {
+    padding: 2rem 1rem;
+  }
+}

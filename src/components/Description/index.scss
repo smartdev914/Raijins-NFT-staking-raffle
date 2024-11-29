@@ -1,0 +1,9 @@
+.description {
+  font-family: 'Poppins';
+  font-size: var(--description);
+  // font-style: italic;
+
+  @media screen and (max-width: 640px) {
+    font-size: var(--description-xs);
+  }
+}

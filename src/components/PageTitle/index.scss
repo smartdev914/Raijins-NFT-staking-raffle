@@ -1,0 +1,19 @@
+.page-title {
+  font-family: 'OtomanopeeOne-Regular';
+  font-size: var(--page-title);
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  
+  span {
+    color: var(--danger);
+  }
+
+  @media screen and (min-width: 411px) and (max-width: 640px) {
+    font-size: var(--page-title-xs)
+  }
+
+  @media screen and (max-width: 410px) {
+    font-size: var(--page-title-xs)
+  }
+}

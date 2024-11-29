@@ -1,0 +1,71 @@
+.raijins-accordion {
+  font-family: 'Poppins';
+  .accordion {
+    border: none;
+
+    .accordion-item {
+      background-color: #16182d;
+      margin-bottom: 1rem;
+      border-radius: 1rem;
+      &.active {
+        .title {
+          color: var(--primary);
+          &:after {
+            content: '-';
+          }
+        }
+      }
+      .title {
+        font-size: 2rem;
+        font-family: 'Poppins';
+        padding: 1rem;
+        color: white;
+        text-transform: uppercase;
+        background-color: transparent;
+
+        @media screen and (max-width: 640px) {
+          font-size: 1.4rem;
+        }
+
+        &:after {
+          content: '+';
+          font-size: 2rem;
+
+          @media screen and (max-width: 640px) {
+            display: none;  
+          }
+        }
+      }
+
+      .panel {
+        .content {
+          padding: 1rem;
+          padding-bottom: 3rem;
+          font-style: italic;
+          font-size: 1.3rem;
+
+          a {
+            color: var(--primary);
+          }
+          @media screen and (max-width: 640px) {
+            font-size: 1rem;
+            padding-bottom: 1.5rem;
+          }
+        }
+      }
+
+      
+      &:last-child {
+        .title {
+          border-radius: 0;
+        }
+      }
+
+      &.active {
+        .panel {
+          max-height: 600px;
+        }
+      }
+    }
+  }
+}

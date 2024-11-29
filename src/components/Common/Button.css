@@ -1,0 +1,148 @@
+a.btn {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-center {
+  justify-content: center;
+}
+
+.btn-left {
+  justify-content: start;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  color: white;
+  font-size: 0.875rem;
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.btn-sm {
+  padding: 0.3125rem 0.875rem;
+}
+
+.btn-lg,
+.btn-xl {
+  padding: 0.5rem 0.9375rem;
+}
+
+.btn-sm .btn-label {
+  font-weight: 400;
+  font-size: 0.875rem;
+  margin-left: 0.5rem;
+  letter-spacing: 0;
+}
+
+.btn-lg .btn-label {
+  margin-left: 0.73rem;
+  font-size: 1.156rem;
+  font-weight: normal;
+  line-height: 1.453rem;
+  letter-spacing: 0;
+}
+
+.btn-xl .btn-label {
+  margin-left: 0.73rem;
+  font-size: 1.156rem;
+  font-weight: normal;
+  line-height: 1.453rem;
+  letter-spacing: 0;
+}
+
+.btn-sm .btn-image {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.btn-lg .btn-image {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.4375rem;
+  height: 1.4375rem;
+}
+
+.btn-xl .btn-image {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.6875rem;
+  height: 1.6875rem;
+}
+
+.btn-primary {
+  background: transparent;
+  border: 1px solid var(--dark-blue-border);
+  border-radius: var(--border-radius-sm);
+}
+
+.bordered-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6.25rem;
+  min-height: 2.25rem;
+  min-width: 11.25rem;
+  background: linear-gradient(96.36deg, #1BE1CF -1.32%, #3F7BD0 49.23%, #5637D1 103.04%);
+}
+
+.bordered-btn .btn-label {
+  margin-left: 0
+}
+
+.connect-wallet,
+.connect-wallet-light {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 1.75rem;
+  border-radius: 6.25rem;
+  width: calc(100% - 4px);
+  min-height: calc(100% - 4px);
+  border: none;
+  background-color: #0a0b11;
+}
+
+.connect-wallet-light {
+  background-color: #ffffff;
+}
+
+.connect-wallet-light:hover span {
+  color: #ffffff
+}
+
+.connect-wallet-light span {
+  color: black;
+}
+
+.btn-primary:hover {
+  background: var(--dark-blue-hover);
+}
+
+.btn-primary:active {
+  background: var(--dark-blue-active);
+}
+
+@media (max-width: 1230px) {
+  .bordered-btn {
+    width: 160px
+  }
+}
+
+@media (max-width: 550px) {
+  .bordered-btn {
+    width: 72px;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 350px) {}

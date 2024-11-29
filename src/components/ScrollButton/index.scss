@@ -1,0 +1,14 @@
+.scroll-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  .img-container {
+    width: 8rem;
+
+    @media screen and (max-width: 640px) {
+      width: 6rem;
+    }
+  }
+}

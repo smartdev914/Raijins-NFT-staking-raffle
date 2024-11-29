@@ -1,0 +1,88 @@
+.dashboard-container {
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 9rem;
+  // padding-bottom: 60px;
+
+  @media screen and (max-width: 640px) {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    padding-top: 5rem;
+  // background-image: url(../../assets/images/dashboard/Transparent.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .title-container {
+    @media screen and (max-width: 640px) {
+      // border: 1px solid var(--success);
+      // background-color: rgb(93 154 174 / 80%);
+      border-radius: 1rem;
+      // padding: 1rem;
+    }
+
+    .page-title {
+      @media screen and (max-width: 410px) {
+        font-size: 2.2rem;
+      }
+    }
+  }
+
+  .general-stats {
+    font-family: 'Poppins';
+    h4 {
+      font-family: 'Poppins';
+      font-size: 1.8rem;
+
+      @media screen and (max-width: 640px) {
+        font-size: 1.2rem;
+      }
+    }
+    
+    h5 {
+      font-size: 1.5rem;
+      font-family: 'Poppins';
+
+      @media screen and (max-width: 640px) {
+        font-size: 1.2rem;
+      }
+    }
+
+    .owned-raijins-tickets-container {
+      font-family: 'Poppins';
+      font-style: italic;
+    }
+  }
+
+  .raffles-table-wrapper {
+    max-height: 200px;
+    overflow: auto;
+    margin-bottom: 40px;
+    border: 1px solid white;
+    .raffles-table {
+      width: 100%;
+      border-collapse: collapse;
+      tr {
+        cursor: pointer;
+        &:hover {
+          background-color: #232647;
+        }
+      }
+      td {
+        padding: 6px;
+        width: 50%;
+        // border-bottom: 1px dashed var(--warning);
+        // border-image: url(../../assets/images/dashboard/border-img.png) 30;
+        font-size: 1.2rem;
+        &:first-child {
+          text-align: left;
+          width: 70%;
+        }
+        &:last-child {
+          text-align: right;
+        }
+      }
+    }
+  }
+}
